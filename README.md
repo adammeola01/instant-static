@@ -40,3 +40,7 @@ console.log(info); from above gives the following:
 That's it!
 <br/><br/>
 Calling the function created our route(s) and when complete, information about the route(s) created is/are reported back in the callback function.
+
+https://github.com/adammeola01/instant-static
+
+https://www.npmjs.com/package/instant-static
