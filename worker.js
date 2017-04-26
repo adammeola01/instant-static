@@ -16,7 +16,7 @@ process.on('message', function(obj) {
 		tcpPortUsed.check(num, '127.0.0.1').then(function(inUse) {
 			if (inUse) {
 				num++;
-				openServer(obj);
+				openServer(num);
 			} else {
 				app.listen(num, function() {
 					process.send({
@@ -31,7 +31,6 @@ process.on('message', function(obj) {
 	openServer(port, function(num) {
 		console.log(`source ejs up at: http://localhost:${num}`);
 		if(charlieWork.args[0].open) open(`http://localhost:${num}`);
-
 	});
 
 });
